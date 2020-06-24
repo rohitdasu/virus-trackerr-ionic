@@ -1,5 +1,7 @@
 {
   "name": "virus-tracker",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

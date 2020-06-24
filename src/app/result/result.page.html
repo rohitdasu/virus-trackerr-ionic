@@ -1,0 +1,31 @@
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar>
+    <ion-back-button defaultHref="/" slot="start"></ion-back-button>
+    <ion-title>
+      COVID-19 Tracker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Virus Tracker</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="statesClass">
+    <ion-list>
+      <ion-item>
+        <ion-label>Confirmed Cases</ion-label
+        ><ion-label>{{confirmed}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Active Cases</ion-label><ion-label>{{active}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Recovered Cases</ion-label><ion-label>{{recovered}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

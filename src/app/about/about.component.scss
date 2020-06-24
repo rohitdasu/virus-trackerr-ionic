@@ -1,0 +1,20 @@
+ion-content {
+  --background: url(../../assets/images/autumn-studio-PaM7SD5wM6g-unsplash.jpg)
+    no-repeat center center / cover;
+}
+.avatar {
+  margin: auto;
+  margin-top: 15%;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100px !important; //any size
+  max-height: 100px !important; //any size
+}
+.myclass {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  text-decoration-style: double;
+}

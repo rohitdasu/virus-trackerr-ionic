@@ -1,7 +1,13 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" mode="ios">
   <ion-toolbar>
+    <ion-icon
+      name="medical-outline"
+      slot="start"
+      size="large"
+      style="margin-left: 5%;"
+    ></ion-icon>
     <ion-title>
-      Blank
+      COVID-19 Tracker
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +15,30 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Virus Tracker</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="heading">
+    <span style="color: white;">Please Select State:</span>
   </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let n of states" col-sm-12 col-md-6 col-lg-4>
+        <ion-card
+          class="statesClass ion-activatable ripple-parent"
+          (click)="gotoDistrict(n)"
+        >
+          {{n}}
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger" (click)="about()">
+      <ion-icon name="information"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

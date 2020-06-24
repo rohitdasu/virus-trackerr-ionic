@@ -7,10 +7,25 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+.statesClass {
+  text-align: center;
+  padding: 3rem;
+  color: black;
+  font-size: small;
+  font-weight: bolder;
+  border-radius: 10rem;
+  background-image: linear-gradient(to left, #1484a0, #f3143900);
+}
 #container strong {
   font-size: 20px;
   line-height: 26px;
+}
+
+.heading {
+  padding: 1rem;
+  font-weight: bolder;
+  font-family: cursive;
+  font-size: large;
 }
 
 #container p {
@@ -24,4 +39,24 @@
 
 #container a {
   text-decoration: none;
+}
+ion-content {
+  --background: url(../../assets/images/autumn-studio-PaM7SD5wM6g-unsplash.jpg)
+    no-repeat center center / cover;
+}
+.result {
+  margin: 5%;
+  --background: rgba(0, 0, 0, 0);
+}
+.my-padding {
+  margin-left: 10%;
+  margin-right: 10%;
+  --background: rgba(0, 0, 0, 0);
+}
+.my-background {
+  --placeholder-color: white;
+  --color: white;
+  --placeholder-opacity: 1;
+  --placeholder-font-weight: bolder;
+  text-align: center;
 }
